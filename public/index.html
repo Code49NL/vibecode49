@@ -142,8 +142,6 @@
         @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
 
         .matrix-text { font-family: 'JetBrains Mono', monospace; color: #D99036; text-shadow: 0 0 5px rgba(217,144,54,0.5); }
-
-        .accordion-content { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; }
     </style>
 </head>
 
@@ -385,20 +383,19 @@
                 </div>
             </div>
 
-            <!-- REALITY CHECK BLOCK: ALARM NOTICE STYLE -->
-            <div class="mt-12 reveal delay-200 border-2 border-accent/40 bg-accent-dark/50 p-5 md:p-8 cut-corner relative overflow-hidden shadow-[0_0_30px_rgba(217,144,54,0.15)]">
-                <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-accent to-transparent"></div>
-                <div class="flex flex-col md:flex-row md:items-start gap-4">
-                    <div class="p-3 bg-accent/20 text-accent rounded-sm shrink-0 border border-accent/30 animate-pulse w-fit">
-                        <i class="fa-solid fa-triangle-exclamation text-xl md:text-2xl"></i>
+            <!-- REALITY CHECK BLOCK: ALARM NOTICE STYLE (Responsive & Condensated Dutch Text) -->
+            <div class="mt-12 reveal delay-200 border-2 border-accent-sec/60 bg-accent-dark/50 p-6 md:p-8 cut-corner relative overflow-hidden shadow-[0_0_30px_rgba(217,144,54,0.15)]">
+                <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-accent-sec to-transparent"></div>
+                <div class="flex flex-col sm:flex-row items-center sm:items-start gap-4 text-center sm:text-left">
+                    <div class="p-3 bg-accent-sec/20 text-accent-sec rounded-sm shrink-0 border border-accent-sec/30 animate-pulse">
+                        <i class="fa-solid fa-triangle-exclamation text-2xl"></i>
                     </div>
                     <div>
-                        <h3 class="font-serif text-base md:text-xl text-heritage mb-3 uppercase tracking-wider text-glow">
-                            <span class="text-accent block md:inline">ALERTMELDING //</span>
-                            <span class="block md:inline">De realiteit: Vibe Coden vs. Production-Ready</span>
+                        <h3 class="font-serif text-lg md:text-xl text-heritage mb-3 uppercase tracking-wider text-glow flex flex-wrap items-center justify-center sm:justify-start gap-2">
+                            <span class="text-accent-sec">ALERTMELDING //</span> Vibe Coden vs. Production-Ready
                         </h3>
-                        <p class="text-xs md:text-sm text-tungsten leading-relaxed mb-4">Met vibe coden creëer je ongekende snelheid en bespaar je direct tienduizenden euro's in de opstartfase. Voor veel interne bedrijfsoplossingen (zoals de automatisering van processen) is jouw zelf gevibecode product <strong class="text-heritage font-bold">direct veilig en goed te gebruiken</strong>.</p>
-                        <p class="text-xs md:text-sm text-tungsten leading-relaxed">Maar let op: zodra je gevoelige (klant)data door de software laat lopen, of er abonnementsgeld voor gaat vragen (SaaS), heb je een robuuste, veilige applicatie nodig. Houd er in dat geval rekening mee dat je developmentkosten tussen de <strong>€2.000 en €10.000</strong> liggen om je MVP te laten afmaken en beveiligen. Die kosten hangen af van de grootte van het project en de keuze of je dit in Nederland laat doen of via platforms als Upwork in bijvoorbeeld Vietnam. <strong class="text-accent">Het principe blijft:</strong> jij valideert goedkoop en razendsnel, daarna schaal je professioneel.</p>
+                        <p class="text-sm text-tungsten leading-relaxed mb-3">Met vibe coden bouw je razendsnel een functionele MVP voor intern gebruik. Maar laat je gevoelige data stromen of ga je abonnementsgeld (SaaS) vragen? Dan is een professionele afwerking nodig.</p>
+                        <p class="text-sm text-tungsten leading-relaxed">Houd in dat geval rekening met <strong>€2.000 tot €10.000</strong> aan developmentkosten (bijvoorbeeld via Upwork in Vietnam) om je MVP door te ontwikkelen tot een robuuste, beveiligde app. <strong class="text-accent">Het principe:</strong> goedkoop valideren via een prototype, daarna pas professioneel schalen.</p>
                     </div>
                 </div>
             </div>
@@ -794,7 +791,7 @@
                         <p class="text-sm text-tungsten mb-6">Jouw case is perfect geschikt om te bouwen in een MVP. De software asset ligt voor het oprapen.</p>
                         <a href="https://tibor.plugandpay.nl/checkout/vibecode49" target="_blank" class="btn-tactical px-8 py-4 text-xs glow-accent">
                             <div class="scan-line"></div>
-                            <span class="relative z-10">Bouw dit op 8 Augustus</span>
+                            <span class="relative z-10 font-bold">Bouw dit op 8 Augustus</span>
                         </a>
                     </div>
                 </div>
@@ -813,15 +810,15 @@
                 "Door de kracht van AI heb je een fantastisch aanbod, door de kracht van je merk kun je als een van de weinigen ook vraag creëren." Straks kan iedereen iets vibecoden. Zorg dat jij niet alleen code hebt, maar een strategie, een merk en een asset. De markt wacht niet.
             </p>
 
-            <div class="inline-block w-full max-w-md group">
-                <div class="border border-accent bg-accent-dark/40 p-10 border-bracket relative overflow-hidden text-left backdrop-blur-sm glow-accent">
+            <div class="inline-block w-full max-w-md tilt-card group">
+                <div class="tilt-content border border-accent bg-accent-dark/40 p-10 border-bracket relative overflow-hidden text-left backdrop-blur-sm glow-accent">
 
                     <div class="text-xs text-accent uppercase tracking-widest font-bold mb-4 border-b border-accent/20 pb-4 font-mono">Toegang Masterclass</div>
 
                     <div class="flex items-baseline gap-2 mb-2">
                         <span class="font-serif text-5xl md:text-6xl text-heritage text-glow">€250</span>
                     </div>
-                    <div class="text-[10px] text-tungsten uppercase tracking-widest mb-8">excl. btw</div>
+                    <div class="text-[10px] text-tungsten uppercase tracking-widest mb-8 font-mono">excl. btw</div>
 
                     <ul class="space-y-4 text-sm text-heritage/90 mb-10">
                         <li class="flex items-center gap-3">
@@ -849,6 +846,11 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Asterisk Note Added Directly Under the Ticket Box -->
+            <p class="text-xs text-tungsten/80 mt-8 max-w-lg mx-auto font-mono text-center leading-relaxed">
+                * Om het maximale uit de bootcamp te halen heb je minimaal een betaald account nodig bij Claude. Een betaald account bij Gemini is een pre.
+            </p>
         </div>
     </section>
 
@@ -922,7 +924,7 @@
                 const x = e.clientX - rect.left; const y = e.clientY - rect.top;
                 const centerX = rect.width / 2; const centerY = rect.height / 2;
                 const rotateX = ((y - centerY) / centerY) * -5;
-                const rotateY = ((x - centerX) / centerX) * 5;
+                const rotateY = ((x - centerX) * 5) / centerX;
                 card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.01, 1.01, 1.01)`;
             });
             card.addEventListener('mouseleave', () => card.style.transform = `perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)`);
